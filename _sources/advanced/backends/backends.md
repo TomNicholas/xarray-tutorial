@@ -2,14 +2,14 @@
 
 ## Introduction
 
-You can [read different type of files](http://xarray.pydata.org/en/stable/user-guide/io.html)) in `xr.open_dataset` by specifying the engine to be used:
+You can [read different type of files](https://docs.xarray.dev/en/stable/user-guide/io.html)) in `xr.open_dataset` by specifying the engine to be used:
 
 ```python
 import xarray as xr
 xr.open_dataset("my_file.grib" , engine="cfgrib")
 ```
 
-For each available egine there is an underlying backend, that reads the data and pack them in a dataset.
+For each available engine there is an underlying backend, that reads the data and pack them in a dataset.
 
 Xarray bundles several backends internally for the following formats:
 
